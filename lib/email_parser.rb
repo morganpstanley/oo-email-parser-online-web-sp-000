@@ -11,7 +11,6 @@ class EmailParser
 
   def parse
     @email_array = @emails.split(/(,| )/).delete_if{ |email| email.length < 3}.uniq
-    @email_array
   end
 
 end
